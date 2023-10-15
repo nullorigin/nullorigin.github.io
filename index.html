@@ -6,22 +6,34 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="author" content="Matthew Fay">
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js">
-
+        <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+<!-- Instantiate single textfield component rendered in the document -->
+        <script>
+            mdc.textField.MDCTextField.attachTo(document.querySelector < HTMLElement > ('.mdc-text-field'));
         </script>
+<!-- Required styles for Material Web -->
+        <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
+
     </head>
     <body>
+<!-- Render textfield component -->
         <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h1>NullOrigin</h1>
-                    <p>NullOrigin is a website primarily focused on integrating Microsoft WSL2 support into gentoo linux</p>
-                    <p>The website is currently under construction</p>
-                    <p>For more information, please contact me at <a href="mailto:matt@nullorigin.com">matt@nullorigin.com</a></p>
-                    <a href="https://github.com/nullorigin">Project Sourcecode is here...</a>              
-                </div>
+            <div class="col-sm-12">
+                <h2><a href="https://www.nullorigin.com/index.html">NULLORIGIN.COM</a></h2>
+                <img src="gentoo-wsl-logo.png" width="1080" height="200" alt="Gentoo WSL Logo" />
+                <p>NullOrigin is a website primarily focused on integrating Microsoft WSL2 support into gentoo linux</p>
+                <h3>This website is currently under construction</h3>
+                <a>Project Sourcecode is at my</a>
+                <a href="https://github.com/nullorigin" class="mdc-line-ripple">Github Repo</a>
+                <br />
+                <a>If you have any questions, comments, or concerns, please post them in</a>
+                <area class="mdc-line-ripple" alt="Github Discussions" href="https://github.com/nullorigin/nullorigin.github.io/discussions/1" />
+                <a href="https://github.com/nullorigin/nullorigin.github.io/discussions/1">Github Discussions </a>
+                <br />
+                <a>Or email me at </a>
+                <area class="mdc-line-ripple" alt="matt@nullorigin.com" href="mailto:matt@nullorigin.com">
+                <a href="mailto:matt@nullorigin.com">matt@nullorigin.com</a>
             </div>
         </div>
     </body>
 </html>
-```
